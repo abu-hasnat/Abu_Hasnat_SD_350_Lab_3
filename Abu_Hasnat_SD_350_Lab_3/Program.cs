@@ -37,13 +37,13 @@ public class TwoFactorRequired: System
         {
             return new Administrator();
         }
-       // throw new Exception("Invalid");
+       throw new Exception("Invalid");
 
 
     }
 }
 
-public class TwoFactorNotRequired : System
+public class TwoFactorNotRequired: System
 {
     protected override User CreateUser(string JSON)
     {
